@@ -6,7 +6,8 @@
   "scripts": {
     "pretest": "standard",
     "test": "nyc ava",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "release": "standard-version"
   },
   "files": [
     "index.js"
