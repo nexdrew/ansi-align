@@ -1,6 +1,6 @@
 {
   "name": "ansi-align",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "align-text with ANSI support for CLIs",
   "main": "index.js",
   "scripts": {
