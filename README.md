@@ -46,7 +46,7 @@ Align the given text per the line with the greatest [`string-width`](https://git
 
 - `opts.align`: string, default `'center'`
 
-   The alignment mode. Use `'center'` for center-alignment or `'right'` for right-alignment.
+   The alignment mode. Use `'center'` for center-alignment, `'right'` for right-alignment, or `'left'` for left-alignment. Note that the given `text` is assumed to be left-aligned already, so specifying `align: 'left'` just returns the `text` as is (no-op).
 
 - `opts.split`: string or RegExp, default `'\n'`
 
@@ -63,6 +63,10 @@ Alias for `ansiAlign(text, { align: 'center' })`.
 ### `ansiAlign.right(text)`
 
 Alias for `ansiAlign(text, { align: 'right' })`.
+
+### `ansiAlign.left(text)`
+
+Alias for `ansiAlign(text, { align: 'left' })`, which is a no-op.
 
 ## Similar Packages
 

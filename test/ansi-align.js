@@ -37,6 +37,18 @@ test('accepts opts for split, pad, and align', (t) => {
   t.is(out, '........one two\tthree four five')
 })
 
+test('supports `align: \'left\'` as no-op', (t) => {
+  let inp = 'one two three\nfour five'
+  let out = ansiAlign(inp, { align: 'left' })
+  t.is(out, inp)
+})
+
+test('ansiAlign.left is alias for left align (no-op)', (t) => {
+  let inp = 'one two three\nfour five'
+  let out = ansiAlign.left(inp)
+  t.is(out, inp)
+})
+
 test('ansiAlign.center is alias for center align', (t) => {
   //    one
   //    two

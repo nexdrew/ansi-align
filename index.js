@@ -6,10 +6,14 @@ function ansiAlign (text, opts) {
   if (!text) return text
 
   opts = opts || {}
+  var align = opts.align || 'center'
+
+  // short-circuit `align: 'left'` as no-op
+  if (align === 'left') return text
+
   var split = opts.split || '\n'
   var pad = opts.pad || ' '
-  var align = opts.align || 'center'
-  var widthDiffFn = align !== 'center' ? fullDiff : halfDiff
+  var widthDiffFn = align !== 'right' ? halfDiff : fullDiff
 
   var returnString = false
   if (!Array.isArray(text)) {
@@ -32,6 +36,10 @@ function ansiAlign (text, opts) {
   })
 
   return returnString ? text.join(split) : text
+}
+
+ansiAlign.left = function left (text) {
+  return ansiAlign(text, { align: 'left' })
 }
 
 ansiAlign.center = function center (text) {
