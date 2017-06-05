@@ -1,5 +1,7 @@
 # ansi-align
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nexdrew/ansi-align.svg)](https://greenkeeper.io/)
+
 > align-text with ANSI support for CLIs
 
 [![Build Status](https://travis-ci.org/nexdrew/ansi-align.svg?branch=master)](https://travis-ci.org/nexdrew/ansi-align)
