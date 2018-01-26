@@ -33,7 +33,7 @@
     "string-width": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.24.0",
+    "ava": "^0.25.0",
     "chalk": "^2.0.1",
     "coveralls": "^3.0.0",
     "nyc": "^11.0.2",
