@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/nexdrew/ansi-align#readme",
   "dependencies": {
-    "string-width": "^4.1.0"
+    "string-width": "^5.0.0"
   },
   "devDependencies": {
     "ava": "^2.0.0",
